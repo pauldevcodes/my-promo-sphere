@@ -7,11 +7,18 @@ import "./index.css";
 
 // routes/pages
 import App from "./App.jsx";
+import Home from "./pages/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <App />,
+    children: ([
+      {
+        index: true,
+        element: <Home />
+      }
+    ])
   }
 ])
 

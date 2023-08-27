@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className=" bg-purple flex flex-row justify-between items-center py-4 px-8">
+    <header className=" absolute w-full bg-purple flex flex-row justify-between items-center py-4 px-8">
       <Link>
         <img src={logo} alt="logo" className=" w-40 lg:w-[360px]" />
       </Link>
@@ -31,13 +31,13 @@ export default function Navbar() {
         <a href="#about" className=" text-xl font-semibold font-['Inter']">
           About us
         </a>
-        <a href="#talents">Find talent</a>
-        <a href="#skills">Top skills</a>
-        <a href="#testimonials">Testimonials</a>
+        <a href="#talents" className=" text-xl font-semibold font-['Inter']">Find talent</a>
+        <a href="#skills" className=" text-xl font-semibold font-['Inter']">Top skills</a>
+        <a href="#testimonials" className=" text-xl font-semibold font-['Inter']">Testimonials</a>
       </nav>
-      <div className=" hidden">
-        <button>Login</button>
-        <button>Signup</button>
+      <div className=" hidden lg:flex lg:items-center lg:gap-x-6">
+        <button className=" text-xl text-white font-['Poppins] font-semibold leading-[51px]">Login</button>
+        <button className=" bg-pink py-1 px-5 rounded-lg font-['Poppins'] text-xl font-semibold leading-[51px]">Signup</button>
       </div>
     </header>
   );
